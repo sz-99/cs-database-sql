@@ -1,0 +1,1 @@
+PRINT 'Hello, world! You have successfully executed this SQL query!';
