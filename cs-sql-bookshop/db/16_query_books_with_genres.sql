@@ -16,3 +16,4 @@ FROM BookGenres
 INNER JOIN Books ON BookGenres.BookId = Books.BookId
 INNER JOIN Genres ON BookGenres.GenreId = Genres.Id
 WHERE Genres.Name LIKE '%dystopian%';
+GO

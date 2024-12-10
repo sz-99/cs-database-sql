@@ -2,5 +2,8 @@ USE MyBookshop;
 GO
 
 ALTER TABLE Books
-ADD AuthorId int;
+ADD AuthorId INT,
+CONSTRAINT FK_Authors FOREIGN KEY (AuthorId)
+    REFERENCES Authors(AuthorId)
+    ON DELETE CASCADE;
 GO

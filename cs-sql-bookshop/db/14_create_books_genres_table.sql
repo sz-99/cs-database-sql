@@ -8,8 +8,11 @@ CREATE TABLE BookGenres(
     BookId INT NOT NULL,
     GenreId INT NOT NULL,
     PRIMARY KEY (BookId, GenreId),
-    FOREIGN KEY (BookId) REFERENCES Books(BookId),
-    FOREIGN KEY (GenreId) REFERENCES Genres(Id)
+    CONSTRAINT FK_Books FOREIGN KEY (BookId) 
+        REFERENCES Books(BookId)
+        ON DELETE CASCADE,
+    CONSTRAINT FK_Genres FOREIGN KEY (GenreId) 
+        REFERENCES Genres(Id)
 );
 
 SELECT * FROM BookGenres; 
