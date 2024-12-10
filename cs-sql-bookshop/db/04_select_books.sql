@@ -27,7 +27,7 @@ WHERE Title LIKE '%The%'
 
 
 PRINT 'Here are the books sorted in alphabetical order:';
-SELECT Title
+SELECT Title, PriceInPence
 FROM Books
 ORDER BY Title 
 

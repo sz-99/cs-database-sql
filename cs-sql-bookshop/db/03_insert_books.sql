@@ -3,6 +3,7 @@ GO
 SET IDENTITY_INSERT Books ON;
 GO
 
+
 INSERT INTO Books (BookId, Title, PriceInPence, Quantity, ReleaseDate, IsFiction)
 VALUES(1, 
 'The Hitchhiker''s Guide to the Galaxy', 
@@ -93,4 +94,5 @@ VALUES(10,
 1);
 GO
 
+SELECT * FROM  Books; GO
 

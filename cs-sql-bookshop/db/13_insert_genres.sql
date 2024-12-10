@@ -2,7 +2,6 @@ USE MyBookshop;
 GO
 
 
-
 INSERT INTO Genres (Name)
 VALUES ('science fiction'),
 ('children''s'),
@@ -13,5 +12,6 @@ VALUES ('science fiction'),
 ('adventure'),
 ('classics');
 GO
+
 SELECT * FROM Genres
-GO
+GO  

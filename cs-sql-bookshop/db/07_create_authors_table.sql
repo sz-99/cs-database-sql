@@ -1,7 +1,7 @@
 USE MyBookshop;
 GO
 
-DROP TABLE Authors;
+DROP TABLE IF EXISTS Authors;
 GO
 
 CREATE TABLE Authors(
