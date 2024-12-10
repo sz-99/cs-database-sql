@@ -10,3 +10,9 @@ GROUP BY Authors.AuthorName
 
 
 PRINT 'Here is the average price for dystopian books:';
+SELECT AVG(Books.PriceInPence) AS AveragePrice, Genres.Name AS GenreName
+FROM BookGenres
+INNER JOIN Books ON BookGenres.BookId = Books.BookId
+INNER JOIN Genres ON BookGenres.GenreId = Genres.Id
+WHERE Genres.Name LIKE '%dystopian%'
+GROUP BY Genres.Name;

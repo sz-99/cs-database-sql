@@ -13,3 +13,7 @@ CREATE TABLE Books(
     IsFiction BIT NOT NULL
 );
 GO
+
+ALTER TABLE Books
+ADD DiscountApplied BIT DEFAULT 0;
+GO
