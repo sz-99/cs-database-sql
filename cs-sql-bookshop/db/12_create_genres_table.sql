@@ -1,2 +1,16 @@
 USE MyBookshop;
 GO
+
+DELETE FROM Genres
+DROP TABLE Genres;
+GO
+
+CREATE TABLE Genres(
+    GenreId INT IDENTITY(1,1) PRIMARY KEY,
+    Name VARCHAR(500) NOT NULL
+);
+GO
+
+SELECT * FROM Genres;
+GO
+

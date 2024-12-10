@@ -1,2 +1,14 @@
 USE MyBookshop;
 GO
+
+DROP TABLE Authors;
+GO
+
+CREATE TABLE Authors(
+    AuthorId INT IDENTITY(1,1) PRIMARY KEY,
+    AuthorName VARCHAR(500) NOT NULL,
+    FunFact NVARCHAR(3000) NOT NULL
+);
+GO
+SELECT * FROM Authors
+GO

@@ -1,7 +1,7 @@
 # Edit your server name, e.g. "DESKTOP-5\SQLEXPRESS" 
-$ServerName = "ENTER_SERVER_NAME"
-$UserName = "ENTER_SQL_SERVER_USERNAME"
-$Password = "ENTER_SQL_SERVER_PASSWORD"
+$ServerName = "TABLET-E0QFQU4M\SQLEXPRESS"
+$UserName = "sa"
+$Password = "pineapplesql"
 
 $files = Get-ChildItem -Path "./db" -Filter *.sql
 
